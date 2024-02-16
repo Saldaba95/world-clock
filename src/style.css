@@ -7,7 +7,11 @@ body {
 .container {
   max-width: 800px;
   margin: 60px auto;
-  background: #dad;
+  background: radial-gradient(
+    circle at 12.3% 19.3%,
+    rgb(85, 88, 218) 0%,
+    rgb(95, 209, 249) 100.2%
+  );
   padding: 30px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
@@ -17,7 +21,7 @@ body {
   margin: 20px 0;
   justify-content: space-between;
   padding: 20px 0;
-  border-bottom: 1px dashed gray;
+  border-bottom: 1px dashed blue;
 }
 .city:last-child {
   border: none;
