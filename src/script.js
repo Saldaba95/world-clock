@@ -16,5 +16,13 @@ function updateTime() {
     "h:mm:ss [<small>] A [</small>]"
   );
 }
+
+function updateCity(event) {
+  let cityTimeZone = event.target.value;
+  console.log(cityTimeZone);
+}
 updateTime();
 setInterval(updateTime, 1000);
+
+let citiesSelect = document.querySelector("#city");
+citiesSelect.addEventListener("change", updateCity);
